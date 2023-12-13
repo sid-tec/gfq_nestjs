@@ -11,18 +11,18 @@ datasource db {
 }
 
 model Servidor {
-  key String @id
-  nomeCurto String
-  nomeCompleto String
+  key           String  @id
+  nomeCurto     String
+  nomeCompleto  String
   //
-  siape String @unique
-  cpf Int? @unique
-  celular Int? @unique
-  email String? @unique
-  sala String?
+  siape         String  @unique
+  cpf           Int?    @unique
+  celular       Int?    @unique
+  email         String? @unique
+  sala          String?
   //
-  masculino Boolean
-  professor Boolean
-  admicao String
+  masculino     Boolean
+  professor     Boolean
+  admissao      String
   aposentadoria String?
 }
